@@ -26,14 +26,14 @@ Bevor ich überhaupt mit der Planung anfangen konnte war mir klar, dass ich zuer
 Um die Datasets zu erkundigen hat sich [Postman](https://www.postman.com/) als ein nützliches Tool erwiesen. Daraufhin habe ich mich für die folgenden
 zwei Datasets entschieden: [geo-countries](https://pkgstore.datahub.io/core/geo-countries/countries/archive/23f420f929e0e09c39d916b8aaa166fb/countries.geojson) 
 und [geo-admin1-us](https://pkgstore.datahub.io/core/geo-admin1-us/admin1-us/archive/832de13f11fc882d18d45e085758e737/admin1-us.geojson). Nachdem ich einen
-Blick auf die Datasets geworfen habe, habe ich angefangen mich an die Planung zu machen. Mir war klar, dass bevor ich überhaupt die eignetliche Aufgabe
-der Datenvisualisierung bearbeiten kann, muss ich die Daten erstmal eingelesen und entsprechend getyped haben. Für einen schnellen Navigation der Daten habe
-ich mich dazu entschieden diese in einer Map darzustellen, bei der der Key eines Objekts der Name ist und der Value ein zugehöriges Array der Polygons.
+Blick auf die Datasets geworfen habe, habe ich angefangen mich an die Planung zu machen. Mir war klar, dass bevor ich überhaupt die eigentliche Aufgabe
+der Datenvisualisierung bearbeiten kann, ich die Daten erstmal einlesen und entsprechend typen muss. Dies habe ich dann zuerst vorgenommen. Für eine schnelle Navigation der Daten habe
+ich mich dazu entschieden diese in einer Map darzustellen, bei der der Key eines Objekts der Name ist und der Value ein zugehöriges Array der Polygone.
 Nach der Präprozessierung der Daten konnte ich dann einen ersten Meachanismus entwickeln um ein Objekt auszuwählen. Dabei habe ich mich für die Komponente
 FormControl, die Material UI zur Verfügung stellt, entschieden. Die Keys der Maps können dort eingespeist werden und mit Auswahl eines Keys kann Zugang zum
-korrespondierenden Array geleistet werden. Bevor ich aber den Mechanismus zum Wechseln zwischen den beiden Datasets kümmere, habe ich mir vorgenommen erstmal
-ein Dataset zu visualisieren, da mir noch unbewusst war wie viel Zeit tatsächlich das implementieren der Karte und des Plots beanspruchen würde.
-Da ich noch nie mit sowohl Leaflet als auch Plotly gearbeitet habe, habe ich mich zunächst mich mit der Documentation befasst und mir kleinere Beispiele
+korrespondierenden Array geleistet werden. Als nächstes habe ich mir Gedanken zum Switch-Machanismus gemacht. Ich bin zu dem Entschluss gekommen diesen später
+zu implementieren und mich erstmal darauf zu fokussieren ein Dataset zu visualisieren, da mir noch unbewusst war wie viel Zeit tatsächlich das implementieren 
+der Karte und des Plots beanspruchen würde. Da ich noch nie mit sowohl Leaflet als auch Plotly gearbeitet habe, habe ich mich zunächst mit der Documentation befasst und mir kleinere Beispiele
 angeguckt. Als nächstes habe ich mich an eigene Tests gemacht und erste Prototype zur Realisierung der Darstellung implementiert. Bei der Karte bin ich auf
 kleine Hürden gestoßen, wie zum Beispiel das in dem Datasets die Breiten- und Höhengrade vertauscht waren oder das ich vergessen hatte das Styling der Leafletkomponenten
 zu importieren. Das erstellen des Plots lief dafür relativ reibungslos. Nachdem ich die Visualisierung des einen Datasets erfolgriech realisiert habe, konnte ich 
