@@ -1,0 +1,17 @@
+.footer-container {
+    height: 15rem;
+    background-color: var(--black-color);
+    width: 100%;
+}
+
+/*============ MEDIA QUERIES ============*/
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-container {
+        height: 10rem;
+    }
+}

@@ -1,0 +1,18 @@
+.leaflet-container {
+    height: 40rem;
+    width: 100%;
+}
+
+/*============ MEDIA QUERIES ============*/
+
+@media only screen and (max-width: 1024px) {
+    .leaflet-container {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .leaflet-container {
+        height: 15rem;
+    }
+}
